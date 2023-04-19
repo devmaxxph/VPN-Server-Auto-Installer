@@ -3,13 +3,13 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
-echo "Script By geo"
+echo "Script By deco"
 clear
 apt install jq curl -y
-DOMAIN=polarisvpn.cf
+DOMAIN=decovpnserver.com
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.polarisvpn.cf
-CF_ID=jconadera@gmail.com
+SUB_DOMAIN=${sub}.decovpnserver.com
+CF_ID=ian@decovpn.com
 CF_KEY=e95c28a344251e89a0c752171d590ce39f6b9
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);

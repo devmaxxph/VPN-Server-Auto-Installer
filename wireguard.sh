@@ -87,9 +87,9 @@ WG_RUNNING=$?
 
 # Tambahan
 cd /usr/bin
-wget -O add-wg "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/add-wg.sh"
-wget -O del-wg "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/del-wg.sh"
-wget -O renew-wg "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/renew-wg.sh"
+wget -O add-wg "https://raw.githubusercontent.com/devmaxxph/new/main/add-wg.sh"
+wget -O del-wg "https://raw.githubusercontent.com/devmaxxph/new/main/del-wg.sh"
+wget -O renew-wg "https://raw.githubusercontent.com/devmaxxph/new/main/renew-wg.sh"
 chmod +x add-wg
 chmod +x del-wg
 chmod +x check-wg

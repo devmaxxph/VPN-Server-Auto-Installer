@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script by : geo
+# Script by : deco
 #!/bin/bash
 clear
 MAX=1

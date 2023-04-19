@@ -20,7 +20,7 @@ fi
 fi
 mkdir /home/sstp
 touch /home/sstp/sstp_account
-touch /var/lib/premium-script/data-user-sstp
+touch /var/lib/decovpn/data-user-sstp
 #detail nama perusahaan
 country=PH
 state=NCR
@@ -40,7 +40,7 @@ make
 cpack -G DEB
 dpkg -i accel-ppp.deb
 mv /etc/accel-ppp.conf.dist /etc/accel-ppp.conf
-wget -O /etc/accel-ppp.conf "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/accel.conf"
+wget -O /etc/accel-ppp.conf "https://raw.githubusercontent.com/devmaxxph/new/main/accel.conf"
 sed -i $MYIP2 /etc/accel-ppp.conf
 chmod +x /etc/accel-ppp.conf
 systemctl start accel-ppp
@@ -62,9 +62,9 @@ iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save > /dev/null
 netfilter-persistent reload > /dev/null
 #input perintah sstp
-wget -O /usr/bin/add-sstp https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/add-sstp.sh && chmod +x /usr/bin/add-sstp
-wget -O /usr/bin/del-sstp https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/del-sstp.sh && chmod +x /usr/bin/del-sstp
-wget -O /usr/bin/check-sstp https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/check-sstp.sh && chmod +x /usr/bin/check-sstp
-wget -O /usr/bin/renew-sstp https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/renew-sstp.sh && chmod +x /usr/bin/renew-sstp
+wget -O /usr/bin/add-sstp https://raw.githubusercontent.com/devmaxxph/new/main/add-sstp.sh && chmod +x /usr/bin/add-sstp
+wget -O /usr/bin/del-sstp https://raw.githubusercontent.com/devmaxxph/new/main/del-sstp.sh && chmod +x /usr/bin/del-sstp
+wget -O /usr/bin/check-sstp https://raw.githubusercontent.com/devmaxxph/new/main/check-sstp.sh && chmod +x /usr/bin/check-sstp
+wget -O /usr/bin/renew-sstp https://raw.githubusercontent.com/devmaxxph/new/main/renew-sstp.sh && chmod +x /usr/bin/renew-sstp
 rm -f /root/sstp.sh
 

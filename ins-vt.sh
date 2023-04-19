@@ -16,7 +16,7 @@ date
 mkdir -p /etc/trojan/
 touch /etc/trojan/akun.conf
 # install v2ray
-wget https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/go.sh && chmod +x go.sh && ./go.sh
+wget https://raw.githubusercontent.com/devmaxxph/new/main/go.sh && chmod +x go.sh && ./go.sh
 rm -f /root/go.sh
 bash -c "$(wget -O- https://raw.githubusercontent.com/trojan-gfw/trojan-quickstart/master/trojan-quickstart.sh)"
 mkdir /root/.acme.sh
@@ -493,29 +493,29 @@ systemctl enable v2ray
 
 # download script
 cd /usr/bin
-wget -O add-ws "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/add-ws.sh"
-wget -O add-vless "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/add-vless.sh"
-wget -O add-tr "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/add-tr.sh"
-wget -O del-ws "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/del-ws.sh"
-wget -O del-vless "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/del-vless.sh"
-wget -O del-tr "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/del-tr.sh"
-wget -O check-ws "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/cek-ws.sh"
-wget -O check-vless "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/cek-vless.sh"
-wget -O check-tr "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/cek-tr.sh"
-wget -O renew-ws "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/renew-ws.sh"
-wget -O renew-vless "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/renew-vless.sh"
-wget -O renew-tr "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/renew-tr.sh"
-wget -O change-port "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/change.sh"
-wget -O port-ws "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/port-ws.sh"
-wget -O port-vless "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/port-vless.sh"
-wget -O port-wg "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/port-wg.sh"
-wget -O port-tr "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/port-tr.sh"
-wget -O cert "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/cert.sh"
-wget -O vvt "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/vvt.sh"
-wget -O shadowsocks "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/shadowsocks.sh"
-wget -O wireguard "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/wireguard.sh"
-wget -O options "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/vvt-options.sh"
-wget -O update "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/update.sh"
+wget -O add-ws "https://raw.githubusercontent.com/devmaxxph/new/main/add-ws.sh"
+wget -O add-vless "https://raw.githubusercontent.com/devmaxxph/new/main/add-vless.sh"
+wget -O add-tr "https://raw.githubusercontent.com/devmaxxph/new/main/add-tr.sh"
+wget -O del-ws "https://raw.githubusercontent.com/devmaxxph/new/main/del-ws.sh"
+wget -O del-vless "https://raw.githubusercontent.com/devmaxxph/new/main/del-vless.sh"
+wget -O del-tr "https://raw.githubusercontent.com/devmaxxph/new/main/del-tr.sh"
+wget -O check-ws "https://raw.githubusercontent.com/devmaxxph/new/main/cek-ws.sh"
+wget -O check-vless "https://raw.githubusercontent.com/devmaxxph/new/main/cek-vless.sh"
+wget -O check-tr "https://raw.githubusercontent.com/devmaxxph/new/main/cek-tr.sh"
+wget -O renew-ws "https://raw.githubusercontent.com/devmaxxph/new/main/renew-ws.sh"
+wget -O renew-vless "https://raw.githubusercontent.com/devmaxxph/new/main/renew-vless.sh"
+wget -O renew-tr "https://raw.githubusercontent.com/devmaxxph/new/main/renew-tr.sh"
+wget -O change-port "https://raw.githubusercontent.com/devmaxxph/new/main/change.sh"
+wget -O port-ws "https://raw.githubusercontent.com/devmaxxph/new/main/port-ws.sh"
+wget -O port-vless "https://raw.githubusercontent.com/devmaxxph/new/main/port-vless.sh"
+wget -O port-wg "https://raw.githubusercontent.com/devmaxxph/new/main/port-wg.sh"
+wget -O port-tr "https://raw.githubusercontent.com/devmaxxph/new/main/port-tr.sh"
+wget -O cert "https://raw.githubusercontent.com/devmaxxph/new/main/cert.sh"
+wget -O vvt "https://raw.githubusercontent.com/devmaxxph/new/main/vvt.sh"
+wget -O shadowsocks "https://raw.githubusercontent.com/devmaxxph/new/main/shadowsocks.sh"
+wget -O wireguard "https://raw.githubusercontent.com/devmaxxph/new/main/wireguard.sh"
+wget -O options "https://raw.githubusercontent.com/devmaxxph/new/main/vvt-options.sh"
+wget -O update "https://raw.githubusercontent.com/devmaxxph/new/main/update.sh"
 chmod +x add-ws
 chmod +x add-vless
 chmod +x add-tr
