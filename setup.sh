@@ -16,7 +16,7 @@ if [ -f "/etc/v2ray/domain" ]; then
 echo "Script Already Installed"
 exit 0
 fi
-mkdir /var/lib/deco;
+mkdir /var/lib/decovpn;
 echo "IP=" >> /var/lib/decovpn/ipvps.conf
 
 #text
