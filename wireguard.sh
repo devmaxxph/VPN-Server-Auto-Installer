@@ -21,7 +21,7 @@ if [[ -e /etc/wireguard/params ]]; then
 	exit 1
 fi
 
-echo -e "${Info} Wireguard VPS AutoScript by Geo"
+echo -e "${Info} Wireguard VPS AutoScript by Deco"
 # Detect public IPv4 address and pre-fill for the user
 
 # Detect public interface and pre-fill for the user
@@ -42,6 +42,7 @@ elif [[ ${OS} == 'centos' ]]; then
 	yum -y install wireguard-dkms wireguard-tools
 	fi
 apt install iptables iptables-persistent -y
+
 # Make sure the directory exists (this does not seem the be the case on fedora)
 mkdir /etc/wireguard >/dev/null 2>&1
 
@@ -86,13 +87,4 @@ systemctl is-active --quiet "wg-quick@wg0"
 WG_RUNNING=$?
 
 # Tambahan
-cd /usr/bin
-wget -O add-wg "https://raw.githubusercontent.com/devmaxxph/new/main/add-wg.sh"
-wget -O del-wg "https://raw.githubusercontent.com/devmaxxph/new/main/del-wg.sh"
-wget -O renew-wg "https://raw.githubusercontent.com/devmaxxph/new/main/renew-wg.sh"
-chmod +x add-wg
-chmod +x del-wg
-chmod +x check-wg
-chmod +x renew-wg
-cd
 rm -f /root/wg.sh
